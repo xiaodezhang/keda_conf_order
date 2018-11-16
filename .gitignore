@@ -121,3 +121,7 @@ migrations
 *.swn
 *.swm
 *.swo
+
+GPATH
+GRTAGS
+GTAGS
