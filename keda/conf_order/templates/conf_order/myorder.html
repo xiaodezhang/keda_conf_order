@@ -6,85 +6,15 @@
 
         <div class = "order d-flex">
                 <div class="date-pick">
+                        {% for time_splits in time_splits_array %}
                         <div class = "row" >
+                                {% for time_split in time_splits %}
                                 <div class="col-6 col-md d-flex">
                                         <div class="card flex-fill">
                                                 <div class="card-body py-2">
                                                         <div class="row">
                                                                 <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>8:00-9:00</h4>
-                                                                        <p class="mb-0">空闲 1A 2B</p>
-                                                                        <p class="mb-0">已预定 2K 2C</p>
-                                                                </div>
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-right">
-                                                                        <div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-
-                                <div class="col-6 col-md d-flex">
-                                        <div class="card flex-fill">
-                                                <div class="card-body py-2">
-                                                        <div class="row">
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>9:00-10:00</h4>
-                                                                        <p class="mb-0">空闲 1A 2B</p>
-                                                                        <p class="mb-0">已预定 2K 2C</p>
-                                                                </div>
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-right">
-                                                                        <div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="col-6 col-md d-flex">
-                                        <div class="card flex-fill">
-                                                <div class="card-body py-2">
-                                                        <div class="row">
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>10:00-11:30</h4>
-                                                                        <p class="mb-0">空闲 1A 2B</p>
-                                                                        <p class="mb-0">已预定 2K 2C</p>
-                                                                </div>
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-right">
-                                                                        <div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="col-6 col-md d-flex">
-                                        <div class="card flex-fill">
-                                                <div class="card-body py-2">
-                                                        <div class="row">
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>10:00-11:30</h4>
-                                                                        <p class="mb-0">空闲 1A 2B</p>
-                                                                        <p class="mb-0">已预定 2K 2C</p>
-                                                                </div>
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-right">
-                                                                        <div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-
-
-
-
-                        </div>
-
-                        <div class = "row" >
-                                <div class="col-6 col-md d-flex">
-                                        <div class="card flex-fill">
-                                                <div class="card-body py-2">
-                                                        <div class="row">
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>13:00-14:00</h4>
+                                                                        <h4>{{ time_split }}</h4>
                                                                         <p class="mb-0">空闲 1A 2B</p>
                                                                         <p >已预定 2K 2C</p>
                                                                 </div>
@@ -95,97 +25,9 @@
                                                 </div>
                                         </div>
                                 </div>
-
-                                <div class="col-6 col-md d-flex">
-                                        <div class="card flex-fill">
-                                                <div class="card-body py-2">
-                                                        <div class="row">
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>14:00-15:00</h4>
-                                                                        <p class="mb-0">空闲 1A 2B</p>
-                                                                        <p class="mb-0">已预定 2K 2C</p>
-                                                                </div>
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-right">
-                                                                        <div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-
-                                <div class="col-6 col-md d-flex">
-                                        <div class="card flex-fill">
-                                                <div class="card-body py-2">
-                                                        <div class="row">
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>15:00-16:00</h4>
-                                                                        <p class="mb-0">空闲 1A 2B</p>
-                                                                        <p class="mb-0">已预定 2K 2C</p>
-                                                                </div>
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-right">
-                                                                        <div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-
+                                {% endfor %}
                         </div>
-
-                        <div class = "row" >
-                                <div class="col-6 col-md d-flex">
-                                        <div class="card flex-fill">
-                                                <div class="card-body py-2">
-                                                        <div class="row">
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>16:00-17:00</h4>
-                                                                        <p class="mb-0">空闲 1A 2B</p>
-                                                                        <p >已预定 2K 2C</p>
-                                                                </div>
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-right">
-                                                                        <div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-
-                                <div class="col-6 col-md d-flex">
-                                        <div class="card flex-fill">
-                                                <div class="card-body py-2">
-                                                        <div class="row">
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>17:00-18:00</h4>
-                                                                        <p class="mb-0">空闲 1A 2B</p>
-                                                                        <p class="mb-0">已预定 2K 2C</p>
-                                                                </div>
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-right">
-                                                                        <div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-
-                                <div class="col-6 col-md d-flex">
-                                        <div class="card flex-fill">
-                                                <div class="card-body py-2">
-                                                        <div class="row">
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-left">
-                                                                        <h4>18:00-19:00</h4>
-                                                                        <p class="mb-0">空闲 1A 2B</p>
-                                                                        <p class="mb-0">已预定 2K 2C</p>
-                                                                </div>
-                                                                <div class="col-12 col-md-6 align-self-center text-center text-md-right">
-                                                                        <div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-                                                                </div>
-                                                        </div>
-                                                </div>
-                                        </div>
-                                </div>
-
-                        </div>
-
+                        {% endfor %}
                 </div>  <!--date-pick-->
 
 
